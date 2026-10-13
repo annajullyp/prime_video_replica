@@ -50,7 +50,7 @@ Tela de celular padrão, aproximadamente 393 x 852 (Iphone 16), compatível com 
 
 ## Uso de IA
 
-O Antigravity IDE desenvolveu este projeto, auxiliando no desenvolvimento e manutenção do código. 
+O Antigravity IDE desenvolveu este projeto, auxiliando no desenvolvimento, manutenção e correção do código. 
 
 O Claude ajudou a corrigir a lista "Assistir mais tarde", trocar o título do destaque e reescrever este README. O código foi conferido com `flutter analyze` e `flutter test`.
  
