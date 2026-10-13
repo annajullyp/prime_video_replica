@@ -37,6 +37,8 @@ Tela de celular padrão, aproximadamente 393 x 852 (Iphone 16), compatível com 
 - **"Nina: A Heroína dos Sete Mares"** foi substituído por **"Moana"**;
 - **"Um Dia"** foi substituído por **"Oppenheimer"**;
 - **"O Drama"** foi substituído por **"Os Rejeitados"**.
+
+ ## Explicação de conteúdos
  
 - **GET/JSON:** em `lib/screens/home_page.dart`, método `carregarTitulo` (chamado uma vez por obra por `_carregarTitulosDaApi`). Ele faz `http.get` em `https://api.themoviedb.org/3/{tipo}/{id}` e converte a resposta com `jsonDecode`, usando `title`/`name`, `overview`, `poster_path` e `backdrop_path` para atualizar o catálogo. `TmdbService.buscarTituloApi` (`lib/services/tmdb_service.dart`) é uma versão equivalente da mesma consulta.
 - **Parâmetros enviados:** na URL, o `tipo` (`movie` ou `tv`), o `id` da obra e a query `language=pt-BR`; no cabeçalho, `Authorization: Bearer <token>`. Na navegação, o mapa completo da obra é passado ao construtor `DetalhesPage(item: item)` por `Navigator.push`.
