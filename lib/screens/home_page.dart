@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  /// Exibe o Custom Dialog (Página 7 do PDF)
+  /// Exibe o Custom Dialog
   void _abrirCustomDialog(Map<String, dynamic> item) {
     showDialog(
       context: context,
@@ -214,7 +214,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  /// Exibe o SimpleDialog de Categorias e Menu (Página 7 do PDF)
+  /// Exibe o SimpleDialog de Categorias e Menu
   void _abrirMenuCategorias() {
     showDialog(
       context: context,
@@ -231,7 +231,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  /// Exibe o showAboutDialog com dados acadêmicos e TMDB (Página 7 e 8 do PDF)
+  /// Exibe o showAboutDialog com dados acadêmicos e TMDB
   void _abrirSobreDialog() {
     showAboutDialog(
       context: context,
@@ -732,7 +732,7 @@ class _HomePageState extends State<HomePage> {
                         onItemLongPress: _abrirCustomDialog,
                       ),
 
-                  // FILEIRA 1: CONTINUAR ASSISTINDO (Print da Página 2)
+                  // FILEIRA 1: CONTINUAR ASSISTINDO
                   if (filtrarContinuar && !filtrarFavoritos)
                     MovieRow(
                       tituloSecao: 'Continuar assistindo',
@@ -743,7 +743,7 @@ class _HomePageState extends State<HomePage> {
                       onItemLongPress: _abrirCustomDialog,
                     ),
 
-                  // FILEIRA 2: FILMES INFANTIS E PARA TODA A FAMÍLIA (Print da Página 2)
+                  // FILEIRA 2: FILMES INFANTIS E PARA TODA A FAMÍLIA
                   if (filtrarInfantil && !filtrarFavoritos)
                     MovieRow(
                       tituloSecao: 'Filmes infantis e para toda a família',
@@ -757,7 +757,7 @@ class _HomePageState extends State<HomePage> {
                       onItemLongPress: _abrirCustomDialog,
                     ),
 
-                  // FILEIRA 3: AO VIVO (Print da Página 2)
+                  // FILEIRA 3: AO VIVO
                   if (filtrarAoVivo && !filtrarFavoritos)
                     MovieRow(
                       tituloSecao: 'Ao vivo',
@@ -769,7 +769,7 @@ class _HomePageState extends State<HomePage> {
                       onItemLongPress: _abrirCustomDialog,
                     ),
 
-                  // FILEIRA 4: FILMES DE DRAMA (Print da Página 2)
+                  // FILEIRA 4: FILMES DE DRAMA
                   if (filtrarDrama && !filtrarFavoritos)
                     MovieRow(
                       tituloSecao: 'Filmes de drama',

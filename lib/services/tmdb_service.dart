@@ -177,7 +177,7 @@ class TmdbService {
             'https://image.tmdb.org/t/p/w500/z446adpGUVXXPxrLpKBGnYBcofk.jpg',
         'bannerUrl':
             'https://image.tmdb.org/t/p/w780/5VApPDSRlONQV2gXugyz1yj7qZm.jpg',
-        'trailerUrl': 'https://www.youtube.com/watch?v=aG_XF0k4Cqo',
+        'trailerUrl': 'https://www.youtube.com/watch?v=gM96ne-XiH0', // <- URL corrigida aqui
         'secao': 'continuar_assistindo',
         'badge': 'prime',
         'progresso': 0.72,
@@ -195,7 +195,7 @@ class TmdbService {
             'https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg',
         'bannerUrl':
             'https://image.tmdb.org/t/p/w780/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg',
-        'trailerUrl': 'https://www.youtube.com/watch?v=kY3Su_kC0-U',
+        'trailerUrl': 'https://www.youtube.com/watch?v=1o2V0zkXV4c',
         'secao': 'continuar_assistindo',
         'badge': 'canais globo',
         'progresso': 0.45,
@@ -235,7 +235,7 @@ class TmdbService {
             'https://image.tmdb.org/t/p/w500/acrtAy8gmxcsEvrDP09MpMSCeDZ.jpg',
         'bannerUrl':
             'https://image.tmdb.org/t/p/w780/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg',
-        'trailerUrl': 'https://www.youtube.com/watch?v=3g8J5g5Qz6I',
+        'trailerUrl': 'https://www.youtube.com/watch?v=B59NoiERDOU',
         'secao': 'infantil_familia',
         'badge': 'canais globo',
         'classificacao': 'L',
@@ -252,7 +252,7 @@ class TmdbService {
             'https://image.tmdb.org/t/p/w500/4JeejGugONWpJkbnvL12hVoYEDa.jpg',
         'bannerUrl':
             'https://image.tmdb.org/t/p/w780/qLVNZFHYUR6Li64He67SWl6BHQe.jpg',
-        'trailerUrl': 'https://www.youtube.com/watch?v=RqrXhwS33yc',
+        'trailerUrl': 'https://www.youtube.com/watch?v=62b9PPVfacg',
         'secao': 'infantil_familia',
         'badge': 'canais globo',
         'classificacao': 'L',
@@ -269,7 +269,7 @@ class TmdbService {
             'https://image.tmdb.org/t/p/w500/kuf6dutpsT0vSVehic3EZIqkOBt.jpg',
         'bannerUrl':
             'https://image.tmdb.org/t/p/w780/jr8tSoJGj33XLgFBy6lmZhpGQNu.jpg',
-        'trailerUrl': 'https://www.youtube.com/watch?v=R2g85tWpM_w',
+        'trailerUrl': 'https://www.youtube.com/watch?v=sLk94T-hS78',
         'secao': 'infantil_familia',
         'badge': 'prime',
         'classificacao': 'L',
@@ -286,7 +286,7 @@ class TmdbService {
             'https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg',
         'bannerUrl':
             'https://image.tmdb.org/t/p/w780/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg',
-        'trailerUrl': 'https://www.youtube.com/watch?v=c3Tskv7xX7k',
+        'trailerUrl': 'https://www.youtube.com/watch?v=cDNkh5WybZo',
         'secao': 'infantil_familia',
         'badge': 'prime',
         'classificacao': 'L',
@@ -386,7 +386,7 @@ class TmdbService {
             'https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg',
         'bannerUrl':
             'https://image.tmdb.org/t/p/w780/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg',
-        'trailerUrl': 'https://www.youtube.com/watch?v=5xH0RZE7Z1E',
+        'trailerUrl': 'https://www.youtube.com/watch?v=m4jfE-TxC24',
         'secao': 'drama',
         'badge': 'prime',
         'classificacao': '16',

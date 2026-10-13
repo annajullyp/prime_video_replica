@@ -26,7 +26,7 @@ class _DetalhesPageState extends State<DetalhesPage> {
     _lembrete = widget.item['lembrete'] as String?;
   }
 
-  /// Ação Assistir trailer requerida na página 8 do PDF com url_launcher
+  /// Ação Assistir trailer com url_launcher
   Future<void> abrirTrailer() async {
     final trailer = widget.item['trailerUrl'] as String?;
     if (trailer == null || trailer.isEmpty) {
