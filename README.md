@@ -29,7 +29,7 @@ Sem token (ou sem internet), o app usa o catálogo local embutido.
 
 ## Tamanho de tela testado
  
-Tela de celular padrão, aproximadamente 393 x 852 (Iphone 16), compatível com o print mobile da atividade.
+Tela de celular padrão, aproximadamente 390 x 844 (Iphone 13), compatível com o print mobile da atividade.
  
 ## Substituições de títulos
  
