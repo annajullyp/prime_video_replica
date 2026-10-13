@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+
 import '../theme/app_theme.dart';
 
-/// Diálogo do tipo SimpleDialog com SimpleDialogOption conforme página 7 do PDF:
 /// "SimpleDialog: No Menu ou Navegar, escolher uma das categorias já existentes
 /// no catálogo. Use SimpleDialogOption. Resultado esperado: Mostrar a categoria ativa
 /// e os itens correspondentes."
@@ -103,10 +103,14 @@ class SimpleCategoryDialog extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
               decoration: BoxDecoration(
-                color: selecionada ? AppTheme.primeBlue.withValues(alpha: 0.15) : Colors.transparent,
+                color: selecionada
+                    ? AppTheme.primeBlue.withValues(alpha: 0.15)
+                    : Colors.transparent,
                 borderRadius: BorderRadius.circular(8),
                 border: selecionada
-                    ? Border.all(color: AppTheme.primeBlue.withValues(alpha: 0.5))
+                    ? Border.all(
+                        color: AppTheme.primeBlue.withValues(alpha: 0.5),
+                      )
                     : null,
               ),
               child: Row(
@@ -114,7 +118,9 @@ class SimpleCategoryDialog extends StatelessWidget {
                   Icon(
                     icone,
                     size: 20,
-                    color: selecionada ? AppTheme.primeBlue : AppTheme.textSecondary,
+                    color: selecionada
+                        ? AppTheme.primeBlue
+                        : AppTheme.textSecondary,
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -125,8 +131,12 @@ class SimpleCategoryDialog extends StatelessWidget {
                           nome,
                           style: TextStyle(
                             fontSize: 14,
-                            fontWeight: selecionada ? FontWeight.bold : FontWeight.w500,
-                            color: selecionada ? AppTheme.primeBlue : AppTheme.textPrimary,
+                            fontWeight: selecionada
+                                ? FontWeight.bold
+                                : FontWeight.w500,
+                            color: selecionada
+                                ? AppTheme.primeBlue
+                                : AppTheme.textPrimary,
                           ),
                         ),
                         Text(
@@ -140,7 +150,11 @@ class SimpleCategoryDialog extends StatelessWidget {
                     ),
                   ),
                   if (selecionada)
-                    const Icon(Icons.check, size: 18, color: AppTheme.primeBlue),
+                    const Icon(
+                      Icons.check,
+                      size: 18,
+                      color: AppTheme.primeBlue,
+                    ),
                 ],
               ),
             ),

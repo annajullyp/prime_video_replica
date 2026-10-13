@@ -249,7 +249,7 @@ class _HomePageState extends State<HomePage> {
           size: 36,
         ),
       ),
-      applicationLegalese: 'Réplica acadêmica para estudo de Flutter\nIFRO - Campus Ariquemes | ADS\nProf. Me. Andrey Alencar Quadros\nEstudante: Programação Mobile',
+      applicationLegalese: 'Réplica acadêmica para estudo de Flutter\nIFRO - Campus Ariquemes | ADS\nProf. Andrey Alencar Quadros\nEstudante: Anna Jullya Gonçalves Pereira',
       children: [
         const SizedBox(height: 14),
         Container(

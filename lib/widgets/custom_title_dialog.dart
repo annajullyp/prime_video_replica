@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 import '../theme/app_theme.dart';
 import '../services/tmdb_service.dart';
 
-/// Diálogo Customizado conforme requerido na página 7 do PDF:
 /// "Custom • Dialog: Nas opções do título, mostrar capa, nome e ações
 /// Favoritar e Assistir mais tarde em um layout próprio. Executar a ação no título correto."
 class CustomTitleDialog extends StatefulWidget {
@@ -37,12 +37,14 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
 
   Future<void> _gerenciarFavorito() async {
     if (_favorito) {
-      // Requisito da página 7: AlertDialog ao retirar título dos favoritos
+      // AlertDialog ao retirar título dos favoritos
       final confirmarRemocao = await showDialog<bool>(
         context: context,
         builder: (ctx) => AlertDialog(
           title: const Text('Remover dos favoritos?'),
-          content: Text('Deseja retirar "${widget.item['titulo']}" da sua lista?'),
+          content: Text(
+            'Deseja retirar "${widget.item['titulo']}" da sua lista?',
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(ctx, false),
@@ -66,7 +68,9 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('"${widget.item['titulo']}" adicionado aos favoritos!'),
+            content: Text(
+              '"${widget.item['titulo']}" adicionado aos favoritos!',
+            ),
             duration: const Duration(seconds: 2),
           ),
         );
@@ -75,7 +79,7 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
   }
 
   Future<void> _escolherDataEHora() async {
-    // Requisito da página 7: DatePicker a partir de hoje
+    // DatePicker a partir de hoje
     final dataEscolhida = await showDatePicker(
       context: context,
       initialDate: DateTime.now(),
@@ -88,7 +92,7 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
 
     if (!mounted || dataEscolhida == null) return;
 
-    // Requisito da página 7: TimePicker para escolher horário
+    // TimePicker para escolher horário
     final horaEscolhida = await showTimePicker(
       context: context,
       initialTime: TimeOfDay.now(),
@@ -137,9 +141,9 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
     final abriu = await launchUrl(uri, mode: LaunchMode.externalApplication);
     if (!mounted) return;
     if (!abriu) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Não foi possível abrir.')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Não foi possível abrir.')));
     }
   }
 
@@ -187,7 +191,11 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
                       backgroundColor: Colors.black.withValues(alpha: 0.6),
                       radius: 16,
                       child: IconButton(
-                        icon: const Icon(Icons.close, size: 16, color: Colors.white),
+                        icon: const Icon(
+                          Icons.close,
+                          size: 16,
+                          color: Colors.white,
+                        ),
                         onPressed: () => Navigator.pop(context),
                         padding: EdgeInsets.zero,
                       ),
@@ -239,15 +247,24 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
                     if (_lembrete != null) ...[
                       const SizedBox(height: 12),
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 6,
+                        ),
                         decoration: BoxDecoration(
                           color: AppTheme.surfaceLight,
                           borderRadius: BorderRadius.circular(6),
-                          border: Border.all(color: AppTheme.primeBlue.withValues(alpha: 0.5)),
+                          border: Border.all(
+                            color: AppTheme.primeBlue.withValues(alpha: 0.5),
+                          ),
                         ),
                         child: Row(
                           children: [
-                            const Icon(Icons.notifications_active, size: 16, color: AppTheme.primeBlue),
+                            const Icon(
+                              Icons.notifications_active,
+                              size: 16,
+                              color: AppTheme.primeBlue,
+                            ),
                             const SizedBox(width: 8),
                             Expanded(
                               child: Text(
@@ -278,18 +295,24 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
                             icon: Icon(
                               _favorito ? Icons.check : Icons.add,
                               size: 18,
-                              color: _favorito ? AppTheme.primeBlue : Colors.white,
+                              color: _favorito
+                                  ? AppTheme.primeBlue
+                                  : Colors.white,
                             ),
                             label: Text(
                               _favorito ? 'Favorito' : 'Favoritar',
                               style: TextStyle(
                                 fontSize: 13,
-                                color: _favorito ? AppTheme.primeBlue : Colors.white,
+                                color: _favorito
+                                    ? AppTheme.primeBlue
+                                    : Colors.white,
                               ),
                             ),
                             style: OutlinedButton.styleFrom(
                               side: BorderSide(
-                                color: _favorito ? AppTheme.primeBlue : const Color(0xFF475569),
+                                color: _favorito
+                                    ? AppTheme.primeBlue
+                                    : const Color(0xFF475569),
                               ),
                               padding: const EdgeInsets.symmetric(vertical: 10),
                             ),
@@ -300,10 +323,17 @@ class _CustomTitleDialogState extends State<CustomTitleDialog> {
                         Expanded(
                           child: OutlinedButton.icon(
                             onPressed: _escolherDataEHora,
-                            icon: const Icon(Icons.schedule, size: 18, color: Colors.white),
+                            icon: const Icon(
+                              Icons.schedule,
+                              size: 18,
+                              color: Colors.white,
+                            ),
                             label: const Text(
                               'Mais tarde',
-                              style: TextStyle(fontSize: 13, color: Colors.white),
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.white,
+                              ),
                             ),
                             style: OutlinedButton.styleFrom(
                               side: const BorderSide(color: Color(0xFF475569)),
