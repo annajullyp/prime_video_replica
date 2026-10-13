@@ -96441,7 +96441,7 @@ o.toString
 s=A.bR(p,B.JA,B.n,p,p,new A.bY(B.bf,p,p,A.cv(10),p,p,B.a9),p,p,p,B.ft,p,p,p)
 r=A.cv(8)
 q=A.pc(B.ki,1)
-A.b1y(s,"R\xe9plica acad\xeamica para estudo de Flutter\nIFRO - Campus Ariquemes | ADS\nProf. Me. Andrey Alencar Quadros\nEstudante: Programa\xe7\xe3o Mobile","Amazon Prime Video (R\xe9plica)","1.0.0",A.b([B.BC,A.bR(p,A.bO(B.KI,B.a1,B.m,B.t,0,B.z),B.n,p,p,new A.bY(B.bf,p,q,r,p,p,B.a9),p,p,p,B.kM,p,p,p),B.BB,B.a_k],t.p),o)},
+A.b1y(s,"R\xe9plica acad\xeamica para estudo de Flutter\nIFRO - Campus Ariquemes | ADS\nProf. Andrey Alencar Quadros\nEstudante: Anna Jullya Gon\xe7alves Pereira","Amazon Prime Video (R\xe9plica)","1.0.0",A.b([B.BC,A.bR(p,A.bO(B.KI,B.a1,B.m,B.t,0,B.z),B.n,p,p,new A.bY(B.bf,p,q,r,p,p,B.a9),p,p,p,B.kM,p,p,p),B.BB,B.a_k],t.p),o)},
 a9j(){var s,r,q=null,p=$.alQ
 p=p.length!==0?p:""
 s=$.ab()
