@@ -188,7 +188,7 @@ class TmdbService {
       {
         'id': 71446,
         'tipo': 'tv',
-        'titulo': 'Casas',
+        'titulo': 'La Casa de Papel',
         'subtitulo': 'Série de Drama e Mistério',
         'sinopse': 'Segredos de família, patrimônio e disputas intensas em uma vila histórica cercada de mistérios.',
         'capaUrl':
